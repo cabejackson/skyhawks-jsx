@@ -7,7 +7,14 @@ if (module.hot) {
 }
 // create a react component
 const App = () => {
-    return <div>Hi There!!</div>
+    return (
+        <div>
+            <label class="label"
+                for="name">Enter Name:</label>
+            <input id="name" type="text"></input>
+            <button style={{ backgroundColor: 'purple', color: 'white' }}>Submit</button>
+        </div >
+    );
 };
 //take the react component and show it on the screen
 ReactDOM.render(
